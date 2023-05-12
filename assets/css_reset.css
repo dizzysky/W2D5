@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+    line-height:  1.5;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+background-color: lemonchiffon;
+}
+h1 {
+    font-size: 38px 
+}
+header > img {
+    width: 100px
+}
+
+ul li a {
+  text-decoration: none;  /* Remove underlines */
+  color: inherit;         /* Inherit color */
+}
+
+h2
+{
+    font-size: 32px
+}
+
+.ingredients-list {
+    list-style: square inside
+}
+body {
+  line-height: 1.5;
+    font-family: Arial, sans-serif
+}
+ul {
+  list-style: none;
+}
+
+ol {
+    list-style: circle
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+input[type="radio"],
+select,
+input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style the background-color of the submit button gold using the last-child selector and give it a darkening hover effect */
+input[type="submit"]:last-child {
+  background-color: gold;
+}
+
+input[type="submit"]:last-child:hover {
+  filter: brightness(80%);
+}
+
+/* Color every other list element in the directions list with a light-grey background */
+ol#directions li:nth-child(even) {
+  background-color: lightgrey;
+}
+
+/* Use the + operator to select the first review immediately after the Reviews header element and give it a 1px, solid, black, top border */
+h2#reviews + .user_review {
+  border-top: 1px solid black;
+}
+
+/* Style the radio buttons with stars using the stars.png file */
+input[type="radio"] {
+  -webkit-appearance: none; /* Hides the default radio button */
+  background-image: url(assets/stars.png); /* Path to the stars.png file */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px; /* Adjust the width and height as needed */
+  height: 20px;
+}
+
+/* Change the background-position property of the radio buttons on hover and when checked */
+input[type="radio"]:hover {
+  background-position: 0 -20px; /* Adjust the background-position to show the desired part of the stars.png image */
+}
+
+input[type="radio"]:checked {
+  background-position: 0 -40px; /* Adjust the background-position to show the desired part of the stars.png image */
+}
